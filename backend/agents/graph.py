@@ -18,7 +18,7 @@ env_path = Path(__file__).parent.parent.parent / ".env"
 load_dotenv(dotenv_path=env_path)
 
 gemini_key = os.getenv("GEMINI_API_KEY")
-gemini_model = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+gemini_model = os.getenv("GEMINI_MODEL", "write-your-model-here")
 if not gemini_key:
     raise ValueError("GEMINI_API_KEY not found in environment variables. Please check your .env file.")
 
